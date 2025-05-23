@@ -2,6 +2,7 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.*;
+import ru.testit.annotations.ExternalId;
 
 import java.time.Duration;
 
@@ -28,6 +29,7 @@ public class PobedaSelenideTests {
     }
 
     @Test
+    @ExternalId("logout_test")
     @Feature("Dropdown Menu")
     @Description("Test verifies that dropdown menus appear when hovering over 'Информация' and 'Услуги и сервисы' links and contain required sections")
     @Story("As a user I want to see proper dropdown menus when hovering over navigation links")
@@ -40,6 +42,7 @@ public class PobedaSelenideTests {
 
 
     @Test
+    @ExternalId("logout_test")
     @Feature("Flight Search")
     @Description("Test verifies flight search functionality shows error when airport is not selected")
     @Story("As a user I want to see error indication when airport is not selected")
@@ -51,6 +54,7 @@ public class PobedaSelenideTests {
     }
 
     @Test
+    @ExternalId("logout_test")
     @Feature("Booking Management")
     @Description("Test verifies booking management functionality with invalid data shows error message")
     @Story("As a user I want to see error message when searching with invalid booking data")
@@ -71,6 +75,7 @@ public class PobedaSelenideTests {
     }
 
     @Test
+    @ExternalId("logout_test")
     @Feature("English Version")
     @Description("This test intentionally fails to demonstrate Allure reporting for failed tests")
     @Story("As a user I want to switch to English version of the site")
